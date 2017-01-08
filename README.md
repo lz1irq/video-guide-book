@@ -10,7 +10,9 @@ conferences and other events.
 To build a PDF of the book, you are going to need `pandoc` and `texlive`. To
 get the exact package names, consult the documentation of your OS of choice.
 
-Building is simple:
+You simply need to run `make` in the repository root folder.
+
+You can also build manually:
 
 `pandoc chapters/*.md -o book.pdf` 
 
