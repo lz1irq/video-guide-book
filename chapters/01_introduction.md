@@ -29,6 +29,6 @@ mostly noise.
 provide a single stream for the hall's PA (public announcement) system and your recording/streaming
 devices. Each source's signal level (volume) can be controlled separately.
 
-![Generic streaming and recording setup](../images/ch01/overview.png)
+![Generic streaming and recording setup](images/ch01/overview.png)
 
 
