@@ -70,18 +70,20 @@ resolution and cable quality, but you should probably not try anything above 15 
 
 ###UDP
 
-Video can be transported over normal IP networks over UDP. For this, you need to pick a codecs for the video and audio and a container.
+Video can be transported over normal IP networks using UDP. For this, you need to pick codecs for the video and audio and a container.
 
 For UDP the container that currently works is __MPEG-TS__ (MPEG Transport Stream). The codecs are usually H.264 for video and AAC for audio.
 
 There are some advantages to using MPEG-TS over UDP:
-* Loose coupling - you can start the transmitter and it will run regardless of the receiver being there (unlike anything TCP-based);
-* Multipoint transport - you can use multicast addresses and read the stream from more than one place;
+
+* Loose coupling - you can start the transmitter and it will run regardless of the receiver being there (unlike anything TCP-based).
+* Multipoint transport - you can use multicast addresses and read the stream from more than one place.
 * It runs over any IP network, which in a lot of cases saves on cabling, as the network already exists.
 
 The tool used to push/receive streams over MPEG-TS/UDP is __ffmpeg__.
 
 Notes:
+
 * Packet loss on the network results in problems/errors in the received streams.
 * There are some extensions that add __FEC__ (Forward Error Correction) to the MPEG-TS stream, but as of January 2017 they're not in mainline ffmpeg.
 * Note that running UDP over the wide Internet will not work very well. A TCP based protocol is recommended because of the packet loss.
