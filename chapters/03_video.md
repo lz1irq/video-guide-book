@@ -38,7 +38,7 @@ A quick way to convay all this information is something like 720i50 - this means
 
 ###HDMI
 
-HDMI (High-Definition Multimedia Interface) is digital audio-video interface. It is electrically compatible with digital DVI so you do not
+HDMI (High-Definition Multimedia Interface) is digital audio-video interface. It is electrically compatible with DVI-D so you do not
 need special converter boxes between two - just a cable with different connectors on both ends. Most HDMI cables you use will likely be
 no longer than 13-15 meters^[https://en.wikipedia.org/wiki/HDMI#Cables].
 
@@ -51,8 +51,12 @@ although laptops with Micro HDMI exist and it may be useful to have a Micro HDMI
 ###SDI
 
 __SDI__, or __serial digital interface__, is found mostly in professional grade equipment. We are concerned mostly with the HD-SDI since it allows transport
-of 720/1080 streams. SDI mostly uses 75-ohm coaxial cable reaching a length of 300 meters, which is very helpful when the projector is located
+of 720/1080 streams with audio. SDI mostly uses 75-ohm coaxial cable reaching a length of 300 meters, which is very helpful when the projector is located
 at the other end of the room or you have cameras spread around the entire event hall, far away from the control desk.
+
+Depending on where you live, SDI cables may not be readily available. Even if they are, you are unlikely to find longer cables (such as 30 meters)
+pre-made and will have to make them yourself. This is not very difficult and tutorials^[http://www.business2community.com/tech-gadgets/building-your-own-sdi-cables-from-scratch-0460084]
+can easily be found online.
 
 (TODO: Take a picture of an SDI cable)
 
@@ -64,10 +68,8 @@ resolution and cable quality, but you should probably not try anything above 15 
 
 ![A male VGA connector](images/ch03/vga.jpg){height=30%}
 
-
 ###UDP
 
 ###RTMP
 
 ###Converters
-
