@@ -70,7 +70,36 @@ resolution and cable quality, but you should probably not try anything above 15 
 
 ###UDP
 
+Video can be transported over normal IP networks over UDP. For this, you need to pick a codecs for the video and audio and a container.
+
+For UDP the container that currently works is __MPEG-TS__ (MPEG Transport Stream). The codecs are usually H.264 for video and AAC for audio.
+
+There are some advantages to using MPEG-TS over UDP:
+* Loose coupling - you can start the transmitter and it will run regardless of the receiver being there (unlike anything TCP-based);
+* Multipoint transport - you can use multicast addresses and read the stream from more than one place;
+* It runs over any IP network, which in a lot of cases saves on cabling, as the network already exists.
+
+The tool used to push/receive streams over MPEG-TS/UDP is __ffmpeg__.
+
+Notes:
+* Packet loss on the network results in problems/errors in the received streams.
+* There are some extensions that add __FEC__ (Forward Error Correction) to the MPEG-TS stream, but as of January 2017 they're not in mainline ffmpeg.
+* Note that running UDP over the wide Internet will not work very well. A TCP based protocol is recommended because of the packet loss.
+* Some networks or network devices create problems with heavy multicast traffic and this needs to be thoroughly tested before use in production.
+* As of January 2017 IPv4 multicast works flawlessly, IPv6 multicast doesn't on the receiving side.
+* As some tests have shown, it's impossible to start any multicast stream before you have network connectivity and a default route, which is a problem in some cases.
+* Under Linux (at least) it's important to raise the kernel net.rmem_max, net.rmem_default, net.wmem_max, net.wmem_default to around 8MB to prevent drops because of overflowing buffers.
+
+
 ###RTMP
+
+__RTMP__ is a protocol developed by Macromedia (now bought by Adobe) for Flash streaming. Nowadays it's used as a transport method for streams
+to restreaming servers. It runs over TCP and is supported by most platforms (like Twitch, Youtube, Facebook). It's also supported by nginx with mod_nginx_rtmp,
+which is one of the easiest ways to create a restreaming server/service.
+
+The tools that support this are a lot, including __ffmpeg__, __OBS__ and a ton of gaming streaming software.
+
+Note that packetloss in the network might result in delays or dropping of the connection altogether.
 
 ###Converters
 
