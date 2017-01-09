@@ -73,3 +73,25 @@ resolution and cable quality, but you should probably not try anything above 15 
 ###RTMP
 
 ###Converters
+
+There are many situations in which you will need to convert to and from different interfaces. For example,
+you may need to run a 50 meter cable to a projector which has only HDMI and/or VGA inputs. Your only option is to run an SDI
+cable followed by a converter. You will use different converters a lot, so it's a good idea to have at least one for each pair
+of different interfaces you may need. Keep in mind that converters are unidirectional - an HDMI to VGA converter cannot convert
+VGA to HDMI. Also check whether the connectors are the appropriate male/female plug, depending on your cables. Do not forget
+that converters Don't forget that converters are not passive devices - they need a power supply, typically 5, 9 or 12 volts.
+
+Fortunately, converters are not overly expensive - they can be found in the 20-30 US dollar range on eBay with free shipping
+from China. You may also be able to source them locally, but chances are you will pay a lot more than they are worth. Of course,
+there are companies such as Blackmagic Design^[https://www.blackmagicdesign.com/] that produce high-quality converters, which are
+great if you can afford them.
+
+Here are some pictures of converters we've used and are happy with. When it comes to the Chinese, no-name ones, 
+there is no point in looking for a specific seller - if what you see on the listing matches the pictures here, chances are it is the same device.
+
+![A HDMI to SDI converter](images/ch03/hdmi_sdi_converter.jpg){height=70%}  
+
+![A HDMI to VGA converter](images/ch03/hdmi_vga_converter.jpg){height=70%}
+
+![A SDI to HDMI converter](images/ch03/sdi_hdmi_converter.jpg){height=70%}
+
