@@ -37,9 +37,37 @@ A quick way to convay all this information is something like 720i50 - this means
 ## Interfaces
 
 ###HDMI
+
+HDMI (High-Definition Multimedia Interface) is digital audio-video interface. It is electrically compatible with digital DVI so you do not
+need special converter boxes between two - just a cable with different connectors on both ends. Most HDMI cables you use will likely be
+no longer than 13-15 meters^[https://en.wikipedia.org/wiki/HDMI#Cables].
+
+HDMI is primarily used for short-distance audio-video transfer from and to consumer devices (such as laptops and most common projectors), although some recording
+equipment is also compatible with it since it's so wide-spread. You are most likely to encounter only the standard HDMI connector (see image below),
+although laptops with Micro HDMI exist and it may be useful to have a Micro HDMI to HDMI cable.
+
+![Left ro right: HDMI, HDMI Mini and HDMI Micro connectors^[image by SIMOBORTOLO, CC BY-SA 4.0]](images/ch03/hdmi_connectors.png){height=30%}
+
 ###SDI
+
+__SDI__, or __serial digital interface__, is found mostly in professional grade equipment. We are concerned mostly with the HD-SDI since it allows transport
+of 720/1080 streams. SDI mostly uses 75-ohm coaxial cable reaching a length of 300 meters, which is very helpful when the projector is located
+at the other end of the room or you have cameras spread around the entire event hall, far away from the control desk.
+
+(TODO: Take a picture of an SDI cable)
+
 ###VGA
+
+__VGA__ (__Video Graphics Array__) is an older standard that is still found on some (business-class) laptops and projectors. Despite its age, it
+is capable of carrying Full HD video over shorter distances with acceptable quality. Maximum cable length varies wildly depending on video 
+resolution and cable quality, but you should probably not try anything above 15 meters.
+
+![A male VGA connector](images/ch03/vga.jpg){height=30%}
+
+
 ###UDP
+
 ###RTMP
+
 ###Converters
 
