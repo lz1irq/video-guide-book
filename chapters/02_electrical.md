@@ -37,6 +37,12 @@ The easiest way to make sure this does not happen, is to always have large enoug
 doing ground lifts (removing grounding on one side of the connected equipment). While ground loops by themselves are very rarely dangerous,
 performing a ground lift is a sure way to expose people to high voltages from unexpected sources - such as a microphone.
 
+### Ground lifts
+
+If you have no choice but to connect equipment to different phases of the power supply or other situations where you have the 50/60Hz noise on the audio
+connection, you can use a ground lift device like a DI box to pass the audio through. A good example for the need of something like this is to connect the
+audio from a camera to a mixing console when there's a long distance between them.
+
 ## Bootleg grounding
 
 Regular power outlets should have 3 wires - line (live), neutral, and ground. However, there might be cases where no grounding wire is available
