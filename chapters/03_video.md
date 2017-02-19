@@ -30,7 +30,7 @@ Progressive scanning means that each row of the image is drawn sequentially. Whi
 appears smoother. Unfortunately, our experience shows that some devices have issues with progressive video and we are forced to use interlaced.
 
 
-A quick way to convay all this information is something like 720i50 - this means 720 progressive scan video at a 50 hertz refresh rate.
+A quick way to convay all this information is something like 720p50 - this means 720 progressive scan video at a 50 hertz refresh rate.
 
 ### Formats and encodings
 
@@ -38,7 +38,7 @@ A quick way to convay all this information is something like 720i50 - this means
 
 ###HDMI
 
-HDMI (High-Definition Multimedia Interface) is digital audio-video interface. It is electrically compatible with DVI-D so you do not
+__HDMI__ (__High-Definition Multimedia Interface__) is digital audio-video interface. It is electrically compatible with DVI-D so you do not
 need special converter boxes between two - just a cable with different connectors on both ends. Most HDMI cables you use will likely be
 no longer than 13-15 meters^[https://en.wikipedia.org/wiki/HDMI#Cables].
 
@@ -85,7 +85,7 @@ The tool used to push/receive streams over MPEG-TS/UDP is __ffmpeg__.
 Notes:
 
 * Packet loss on the network results in problems/errors in the received streams.
-* There are some extensions that add __FEC__ (Forward Error Correction) to the MPEG-TS stream, but as of January 2017 they're not in mainline ffmpeg.
+* There are some extensions that add __FEC__ (__Forward Error Correction__) to the MPEG-TS stream, but as of January 2017 they're not in mainline ffmpeg.
 * Note that running UDP over the wide Internet will not work very well. A TCP based protocol is recommended because of the packet loss.
 * Some networks or network devices create problems with heavy multicast traffic and this needs to be thoroughly tested before use in production.
 * As of January 2017 IPv4 multicast works flawlessly, IPv6 multicast doesn't on the receiving side.
@@ -144,7 +144,7 @@ of resolutions and outputs a single resolution (adjustable on most models).
 
 #### Atlona
 
-The Atlona AT-HD510VGA video scaler takes a VGA plus audio input and provides HDMI plus audio.
+The __Atlona AT-HD510VGA__ video scaler takes a VGA plus audio input and provides HDMI plus audio.
 The output resolution is set using the `MENU`, `+`, and `-` buttons. It is best to connect it before
 the event to a monitor, because the resolution menu is displayed as an overlay on the scaled output
 image.
