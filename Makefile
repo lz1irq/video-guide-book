@@ -1,4 +1,4 @@
-chapters := $(wildcard chapters/*.md)
+chapters := $(sort $(wildcard chapters/*.md))
 images := $(wildcard images/*)
 
 all: $(chapters) $(images)
