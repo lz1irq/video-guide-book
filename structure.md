@@ -7,7 +7,7 @@ The Conference Video Guide
     * Ground Loops
     * Grounding
 
-3. Video
+3. Video interfaces and sources
     * General
         * Resolution
         * Refresh rate
@@ -21,22 +21,13 @@ The Conference Video Guide
         * Converters
     * Sources
         * Cameras
-        * Computers
-            * Scalers
-    * Switchers
-        * ATEM
-        * voctomix
-    * Recording
+        * Computers and scalers
 
-4. Audio
-    * Interfaces
-    * Microphones
-        * Condenser
-        * Dynamic
-    * Wireless transmitters/receivers
-    * Mixing consoles
+4. Video mixing
+    * ATEM
+    * Voctomix
 
-5. Streaming
+5. Video streaming and recording
     * Streaming devices
     * nginx-rtmp
     * Web players
@@ -44,10 +35,20 @@ The Conference Video Guide
         * YouTube
         * Twitch
         * Facebook
+    * Recording
 
-6. Post-processing
+6. Audio
+    * Interfaces
+    * Microphones
+        * Condenser
+        * Dynamic
+    * Wireless transmitters/receivers
+    * Mixing consoles
+
+7. Post-processing
     * ffmpeg
 
-7. Case Studies
+8. Case Studies
     * FOSDEM
     * OpenFest
+
