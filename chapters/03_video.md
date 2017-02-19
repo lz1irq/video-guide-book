@@ -126,3 +126,41 @@ there is no point in looking for a specific seller - if what you see on the list
 
 ![A SDI to HDMI converter](images/ch03/sdi_hdmi_converter.jpg){height=70%}
 
+## Sources
+
+### Cameras
+
+### Computers and scalers
+
+Often the speakers at your event will want to show slides or other media alongisde their talk. 
+They may bring their own laptop, or you can provide them with one. In any case, you will want 
+the output from the computer to be the same resolution as your other video sources for various
+reasons. Hardware switchers such as the ATEM (see below) require all video signals to be the same
+resolution and framerate. For software switches, it is better for latency and computing resources
+to avoid interpolating.
+
+The way to achieve this is by using a scaler - a device that accepts a video signal in a wide range
+of resolutions and outputs a single resolution (adjustable on most models). 
+
+#### Atlona
+
+The Atlona AT-HD510VGA video scaler takes a VGA plus audio input and provides HDMI plus audio.
+The output resolution is set using the `MENU`, `+`, and `-` buttons. It is best to connect it before
+the event to a monitor, because the resolution menu is displayed as an overlay on the scaled output
+image.
+
+This particular model has been discontinued, but we still find it to be adequate. You may need to 
+use an HDMI converter since computers with VGA outputs are getting more and more rare.
+
+![Atlona AT-HD510VGA VGA scaler^[http://atlona.com/product/at-hd510vga/]](images/ch03/atlona.jpg)
+
+#### Chinese videoscaler
+
+This Chinese video scaler (which can be found on AliExpress under the name "ALL to SDI Scaler Converter" for about $120 US)
+has some advantages over the Atlona. First, it provides two SDI (they produce an indentical signal). This can come in handy
+since a lot of the time the stage is far away from the control desk and you need a long cable to transport the signal from
+the lecturer's computer. Second, it has different input interfaces - HDMI, DVI, VGA, and composite.
+
+![ALL to SDI Scaler Converter^[https://www.aliexpress.com]](images/ch03/chinese_scaler.jpg)
+
+
